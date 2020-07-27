@@ -2,6 +2,8 @@
 ## functions do
 
 ## Write a short comment describing this function
+## Author: Paul P Vinod (Git username: Varun1914)
+## Task : Programming Assignment Week 3
 
 makeCacheMatrix <- function(x = matrix()) {
     inverse <- NULL
@@ -30,19 +32,25 @@ makeCacheMatrix <- function(x = matrix()) {
 ## Write a short comment describing this function
 
 cacheSolve <- function(x, ...) {
-        ## Return a matrix that is the inverse of 'x
+    ## Return a matrix that is the inverse of 'x
     i <- x$getinverse()
     d <- dim(x$displaymat())
+
+    ## To check for the cached memmory
     if(!is.null(i))
     {
         message("Cached inverse matrix:")
         return(i)
     }
-    else if (!det(x$displaymat()) && !(d[1] - d[2]))
+
+    ## To check for the global conditions necessary for inverse matrix
+    else if (!round(det(x$displaymat())) && !(d[1] - d[2]))
     {
         message("Cannot calculate the inverse global condition failure!!!")
         return(NULL)
     }
+
+    ## Inverse calculation
     data <- x$displaymat()
     i <- solve(data)
 
