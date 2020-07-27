@@ -1,9 +1,12 @@
 ## Put comments here that give an overall description of what your
 ## functions do
 
-## Write a short comment describing this function
+
 ## Author: Paul P Vinod (Git username: Varun1914)
 ## Task : Programming Assignment Week 3
+
+#  Function to entervalue,display
+## and storeinverse and reterive inverse value
 
 makeCacheMatrix <- function(x = matrix()) {
     inverse <- NULL
@@ -29,7 +32,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## Function to calculate inverse of the created matrix
+## else print the cached inverse matrix value
 
 cacheSolve <- function(x, ...) {
     ## Return a matrix that is the inverse of 'x
