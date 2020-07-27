@@ -1,18 +1,15 @@
 ## Put comments here that give an overall description of what your
 ## functions do
 
-<<<<<<< HEAD
-
-## Author: Paul P Vinod (Git username: Varun1914)
-## Task : Programming Assignment Week 3
-
-#  Function to entervalue,display
-## and storeinverse and reterive inverse value
-=======
 ## Write a short comment describing this function
 ## Author: Paul P Vinod (Git username: Varun1914)
 ## Task : Programming Assignment Week 3
->>>>>>> 19ff2589f58b595cc296dd16a497daefb9e48224
+
+
+
+
+##  Function to entervalue,display
+## and storeinverse and reterive inverse value
 
 makeCacheMatrix <- function(x = matrix()) {
     inverse <- NULL
